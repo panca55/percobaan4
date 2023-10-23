@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public Button btnCalculate;
     private static final String STATE_RESULT = "state_result";
     @Override
-    protected void onCreate(Bundle savedInstanceState){
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         edtWidth = findViewById(R.id.edt_width);
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnCalculate = findViewById(R.id.btn_calculate);
         tvResult = findViewById(R.id.tv_result);
         btnCalculate.setOnClickListener(this);
-        if (savedInstanceState != null){
+        if (savedInstanceState != null) {
             String result = savedInstanceState.getString(STATE_RESULT);
             tvResult.setText(result);
         }
